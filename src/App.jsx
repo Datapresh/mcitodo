@@ -1,12 +1,21 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
+import {db} from './Firebase'
+
 import './App.css'
 
 function App() {
-const  [todos, setTodos] = useState([
-  'create a git repository',
-  'created  a react vite project'
-])
+const  [todos, setTodos] = useState([])
 const [input , setInput] = useState("")
+
+
+useEffect(()=>{
+  db.collection('todos').onSnapshot(
+    snapshot=>{
+      setTodos(snapshot.docs.map(doc=>doc.data))
+    }
+  )
+},[input])
+
 
 const addTodo = function(e) {
   e.preventDefault()
