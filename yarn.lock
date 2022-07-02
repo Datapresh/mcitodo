@@ -1052,7 +1052,7 @@ faye-websocket@0.11.4:
   dependencies:
     websocket-driver ">=0.5.1"
 
-firebase@^9.8.4:
+firebase@9.8.4:
   version "9.8.4"
   resolved "https://registry.yarnpkg.com/firebase/-/firebase-9.8.4.tgz#d730674612601e698dc0b1953ff1c290cdf4708b"
   integrity sha512-fQigVEtSBprGBDLVTr485KQJ1YUWh/HeocMQvmhaUCL9dHUnW8GWfK+XkKOV2kcDB1Ur8xZPkjCxlmoTcykhgA==
@@ -1338,6 +1338,11 @@ react-dom@^18.0.0:
   dependencies:
     loose-envify "^1.1.0"
     scheduler "^0.23.0"
+
+react-firebase-hooks@^5.0.3:
+  version "5.0.3"
+  resolved "https://registry.yarnpkg.com/react-firebase-hooks/-/react-firebase-hooks-5.0.3.tgz#3125a382d6b72deee776fe1df9e0c8173cf36d5d"
+  integrity sha512-0+V2XwInZJNjW8B2cm+U21Hlv4xnp/1tJqIoDg2rjyWzKTQ9VoLPQ9PAt+fMqPumjLz5uCIREY7YqGSSjc439Q==
 
 react-refresh@^0.13.0:
   version "0.13.0"
